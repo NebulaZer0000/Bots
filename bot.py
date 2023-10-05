@@ -21,7 +21,7 @@ with open("token.txt") as file:
     token = file.read()
 
 
-async def rp(ctx):
+async def pokemon(ctx):
     ranpoke = random.randint(1, 905)
     url = "https://pokeapi.co/api/v2/pokemon/"
     secs = 30
