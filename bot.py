@@ -8,7 +8,6 @@ intents = discord.Intents.all()
 Bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
 #/echo hello
-
 @Bot.command()
 async def echo(ctx, *args) :
     m_args = " ".join(args)
