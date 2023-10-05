@@ -1,7 +1,8 @@
-from imaplib import Commands
 import random
 import discord
+from discord.ext import command
 import requests
+
 
 
 intents = discord.Intents.all()
