@@ -1,14 +1,11 @@
-from imaplib import Commands
 import random
 import discord
-from discord.ext import command
+from discord.ext import commands
 import requests
-
-
 
 intents = discord.Intents.all()
 
-Bot = Commands.Bot(command_prefix="/", intents=discord.Intents.all())
+Bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
 #/echo hello
 
