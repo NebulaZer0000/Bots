@@ -7,8 +7,6 @@ intents = discord.Intents.all()
 
 Bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
-
-secs = 30
 token = ""
 
 with open("token.txt") as file:
