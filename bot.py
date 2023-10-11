@@ -8,11 +8,16 @@ intents = discord.Intents.all()
 Bot = commands.Bot(command_prefix="/", intents=discord.Intents.all())
 
 
+secs = 30
+token = ""
+
+with open("token.txt") as file:
+    token = file.read()
+
 @Bot.command()
 async def pokemon(ctx):
     ranpoke = random.randint(1, 905)
     url = "https://pokeapi.co/api/v2/pokemon/"
-    secs = 30
     
     try:
         r = requests.get(f"{url}{ranpoke}")
